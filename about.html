@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="aboutcss.css">
+    <style>
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul class="sub-titles">
+                <li><a href="./web.html">Home</a></li>
+                <li><a href="./bibliography.html">Bibliography</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <h2>Our Mission</h2>
+            <p>We explore crop circles, merging science, culture, and spirituality to unravel mysteries and uncover profound implications.</p>
+            <button id="missionBtn">Learn More</button>
+            <div id="missionInfo" class="hidden">
+                <p>
+                    At Dreams of the Great Earth Changes, we're committed to unraveling the profound mysteries of crop circles. Through meticulous scientific inquiry, we explore their intricate patterns and origins. Beyond science, we delve into their cultural and religious significance, fostering collaboration to deepen our understanding of these enigmatic phenomena. Join our journey of discovery.</p>
+            </div>
+        </section>
+        <section class="about">
+            <h2>Contact Us</h2>
+            <p></p>
+            <button id="contactbtn">Learn more</button>
+            <div id="contactInfo" class="hidden">
+                
+                <p><br> Call: +971 50 112 5493       <br>   Email: greatearthchanges@gmail.com  <br>Instagram: great_earth_changes<br>Facebook: great_earth_changes<br>Youtube: great_earth_changes<br></p>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementById('missionBtn').addEventListener('click', function() {
+            var missionInfo = document.getElementById('missionInfo');
+            missionInfo.classList.toggle('hidden');
+        });
+
+        document.getElementById('contactbtn').addEventListener('click', function() {
+            var teamInfo = document.getElementById('contactInfo');
+            teamInfo.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
